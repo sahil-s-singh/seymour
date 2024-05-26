@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+:root{
+  font-family: 'Atkinson Hyperlegible';
+ 
+}
+.primaryFont{
+  font-family: 'Atkinson Hyperlegible', Helvetica,Arial,'Times New Roman', Times, serif ;
+}
+
+.pribacColor{
+  background-color: #28094c;
+}
+
+.card-container {
+  width: 450px;
+  height: 320px;
+  background-color: #17002E;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1.5px solid rgb(84 90 106);
+}
+
+
+.text-field {
+  width: 320px;
+  height: 80px;
+  outline: #6A6680;
+  padding: 12px;
+  border: 2px solid rgb(84 90 106);
+  border-radius: 7px;
+  background-color: #4A4759; 
+  color: white;
+  
+  white-space: normal;
+  word-wrap: break-word;
+  font-size: 16px;
+  overflow:auto
+}
+.transcript-font{
+  font-family: Helvetica;
+}
+.emoji-container {
+  background-color: #212123;
+  box-shadow: 0px 0px 216.51243591308594px 0px #69696933;
+
+  border-radius: 60%; /* Adjust border radius as needed */
+}
+
+#container {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid white; /* Adjust the border size as needed */
+}
+
+#container:before {
+  content: '';
+  position: absolute;
+  left: 20%;
+  width: 100%;
+  height: 200%;
+  background-color: black;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+#container2 {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  background-color: black;
+  border: 1px solid white;
+  margin:  0 10px 0 10px;
+}
+
+#container2:before {
+  content: '';
+  position: absolute;
+  left: 20%;
+  width: 100%;
+  height: 200%;
+  background-color: white;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#container3 {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  background-color: yellow;
+  border: 1px solid white; /* Adjust the border size as needed */
+}
+
+#container3:before {
+  content: '';
+  position: absolute;
+  left: 20%;
+  width: 100%;
+  height: 200%;
+  background-color: black;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#container4 {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  background-color: black;
+  border: 1px solid white;
+   margin:  0 10px 0 10px; /* Adjust the border size as needed */
+}
+
+#container4:before {
+  content: '';
+  position: absolute;
+  left: 20%;
+  width: 100%;
+  height: 200%;
+  background-color: yellow;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* resizable box */
+.resizable {
+
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.resizable .resizers {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #4286f4;
+  box-sizing: border-box;
+}
+
+.resizable .resizers .resizer {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background: white;
+  border: 3px solid #4286f4;
+  position: absolute;
+}
+
+.resizable .resizers .resizer.top-left {
+  left: -5px;
+  top: -5px;
+  cursor: nwse-resize; /*resizer cursor*/
+}
+.resizable .resizers .resizer.top-right {
+  right: -5px;
+  top: -5px;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-left {
+  left: -5px;
+  bottom: -5px;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-right {
+  right: -5px;
+  bottom: -5px;
+  cursor: nwse-resize;
+}
+
+.resizable .innerContent {
+
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+
+/* greeting */
+.stepper-container {
+  position: relative;
+}
+
+.greeting-container {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 7s ease;
+}
+
+.greeting-container.show {
+  opacity: 1;
+}
+
+.greeting {
+  font-size: 3rem;
+  color: white;
+}
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
